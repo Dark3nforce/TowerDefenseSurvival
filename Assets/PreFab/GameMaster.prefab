@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7651952046928839681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7651952046928839683}
+  - component: {fileID: 7651952046928839682}
+  - component: {fileID: 7651952046928839684}
+  - component: {fileID: 1466982522}
+  - component: {fileID: 6981608224923578349}
+  - component: {fileID: 1633098624}
+  m_Layer: 0
+  m_Name: GameMaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7651952046928839683
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7651952046928839681}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 31.4, y: 2.77, z: 31.23}
+  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7651952046928839682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7651952046928839681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 717a2b7bd0704490a9c0c232219c5a8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waves:
+  - enemy: {fileID: 1630428535781621164, guid: d8302f19e11d74251ab8ebc32cfc08ba, type: 3}
+    count: 2
+    rate: 2
+  - enemy: {fileID: 1630428535781621164, guid: d8302f19e11d74251ab8ebc32cfc08ba, type: 3}
+    count: 5
+    rate: 2
+  - enemy: {fileID: 1630428535781621164, guid: d8302f19e11d74251ab8ebc32cfc08ba, type: 3}
+    count: 10
+    rate: 4
+  - enemy: {fileID: 1630428535781621164, guid: 3ed276f02658242839601aab9a568ce0, type: 3}
+    count: 5
+    rate: 2
+  - enemy: {fileID: 1630428535781621164, guid: 8274359c96dae4c738c4f0a640021132, type: 3}
+    count: 10
+    rate: 2
+  spawnPoint: {fileID: 0}
+  paths:
+  - {fileID: 0}
+  timeBetweenWaves: 2
+  waveCountdownText: {fileID: 0}
+  roundStart: {fileID: 0}
+  enemyCounter: {fileID: 0}
+  GM: {fileID: 6981608224923578349}
+--- !u!114 &7651952046928839684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7651952046928839681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54c687e486dff46e5a7266adea7dc177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildEffect: {fileID: 7612571611777317122, guid: eded10076b689430d8b47c3b568e0644,
+    type: 3}
+  nodeUI: {fileID: 0}
+--- !u!114 &1466982522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7651952046928839681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15139a20fea1f44358569924a27f5eeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMoney: 999999
+  startLives: 99
+  startRound: 0
+--- !u!114 &6981608224923578349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7651952046928839681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3c79735e4d8a48c1bcb67bf75eff855, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverUI: {fileID: 0}
+  gameWinUI: {fileID: 0}
+  unlockLvl: 2
+--- !u!114 &1633098624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7651952046928839681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c41a67c177c4b6eba4406c97e53b34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseUI: {fileID: 0}
